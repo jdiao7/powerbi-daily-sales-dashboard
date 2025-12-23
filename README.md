@@ -1,94 +1,53 @@
 # Power BI Daily Sales Dashboard
 
-This project analyzes daily sales data from a **Daily** coffee chain location in the Philippines using **Power BI**.
-
-The dashboard is designed to be **fully dynamic and reusable**, allowing new months of data to be added without structural changes.  
-**November is used as a sample period** in this repository because it is the most recent fully completed month with a consistent dataset.
+An interactive Power BI dashboard built to analyze daily sales performance for a retail coffee chain.  
+The dashboard is designed to scale across **any month or date range** and supports ongoing data refreshes as new sales data becomes available.
 
 ---
 
-## Project overview
+## 📊 Dashboard Overview
 
-The goal of this dashboard is to provide clear visibility into store performance by:
-- Tracking key sales KPIs
-- Monitoring daily sales trends
-- Comparing third-party delivery platform revenue
-- Supporting ongoing operational decision-making
+![Power BI Dashboard Preview](screenshots/dashboard_overview.png)
 
-The dashboard is suitable for recurring monthly reporting and can be refreshed as new data becomes available.
+This dashboard provides a high-level view of sales performance along with channel-level comparisons and daily trends.
 
 ---
 
-## Key KPIs
+## 📌 Key Metrics (KPIs)
 
-The following KPIs are dynamically calculated based on the selected date range:
+The dashboard tracks the following core KPIs:
 
-- **Gross Sales** – Total sales before deductions  
-- **Total Net Sales** – Net revenue after adjustments  
-- **Grab Revenue** – Revenue generated via Grab delivery  
-- **Food Panda Revenue** – Revenue generated via Food Panda  
-- **Food Revenue** – In-store and food-only revenue totals  
+- **Gross Sales**
+- **Total Net Sales**
+- **Grab Revenue**
+- **Food Panda Revenue**
+- **In-store Food Revenue**
 
-All KPI cards update automatically when the date range is adjusted or new data is loaded.
-
----
-
-## Trend analysis
-
-### Daily Net Sales
-A line chart showing net sales performance by day, allowing identification of:
-- High-performing days
-- Sales dips or anomalies
-- Overall revenue momentum across a selected period
-
-### Grab vs Food Panda Daily Revenue
-A comparative line chart visualizing daily revenue from:
-- Grab
-- Food Panda
-
-This enables quick evaluation of platform performance, demand patterns, and revenue contribution differences over time.
+These KPIs automatically update based on the selected date range.
 
 ---
 
-## Dashboard features
+## 📈 Visualizations
 
-- Interactive **date range slicer**
-- Dynamic KPI recalculation
-- Multi-platform revenue comparison
-- Clean, executive-ready visual layout
-- Designed for ongoing monthly updates
+- **Daily Net Sales Trend**  
+  Line chart showing net sales performance by day
 
----
+- **Grab vs Food Panda Daily Revenue**  
+  Side-by-side comparison of third-party delivery platforms
 
-## Sample data
-
-This repository includes:
-- `sample_output.csv` – Example dataset used to populate the dashboard  
-- A screenshot preview of the dashboard output
-
-The sample data reflects a completed reporting period but is representative of the structure used for all months.
+- **Dynamic Date Slicer**  
+  Enables analysis for any completed or in-progress month
 
 ---
 
-## Tools used
+## 🧹 Data Preparation & Modeling
 
-- **Power BI** – Data modeling, DAX measures, and visualization  
-- **Excel / CSV** – Source data format  
-
----
-
-## Dashboard scalability
-
-This dashboard is built to support:
-- Additional months of data with no model changes
-- Automatic KPI recalculation
-- Ongoing operational and performance reporting
-
-New data can be appended to the existing dataset, and all visuals and measures update accordingly.
+- Source data originated from **daily sales reports** with inconsistent formatting and excess columns
+- Cleaned and transformed using **Power Query**
+- Reduced **200+ raw columns** into a KPI-focused analytical model
+- Created calculated measures and date logic to support time-based analysis
 
 ---
 
-## Notes
+## 🗂️ Repository Contents
 
-This project was created for analytical and portfolio purposes.  
-All data has been sanitized and is used solely to demonstrate dashboard design, data modeling, and business analysis techniques.
