@@ -56,6 +56,20 @@ All KPIs are dynamically calculated and automatically update based on the select
 
 ---
 
+## 💡 Operational Insights Enabled
+
+This dashboard is designed to surface actionable insights such as:
+
+- The relative contribution of **in-store food sales vs third-party delivery platforms**
+- Day-to-day variability in **net sales performance**
+- Differences in revenue patterns between **Grab and Food Panda**
+- The impact of discounts and platform fees by comparing **gross vs net sales**
+- Ongoing month-over-month performance as new data is added
+
+While November is used as a representative reporting period, the dashboard is built to continuously surface these insights as additional data becomes available.
+
+---
+
 ## 🗂️ Repository Contents
 
 ```text
