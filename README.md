@@ -1,7 +1,9 @@
 # Power BI Daily Sales Dashboard
 
-An interactive Power BI dashboard built to analyze daily sales performance for a retail coffee chain.  
-The dashboard is designed to scale across **any month or date range** and supports ongoing data refreshes as new sales data becomes available.
+An interactive **Power BI dashboard** built to analyze daily sales performance for a **Daily coffee chain location in the Philippines**.
+
+The dashboard is designed to be **fully dynamic and reusable**, allowing new months of data to be added without structural changes.  
+November is used as a sample period in this repository because it represents the most recent fully completed month with a consistent dataset.
 
 ---
 
@@ -9,7 +11,7 @@ The dashboard is designed to scale across **any month or date range** and suppor
 
 ![Power BI Dashboard Preview](screenshots/dashboard_overview.png)
 
-This dashboard provides a high-level view of sales performance along with channel-level comparisons and daily trends.
+This dashboard provides a high-level view of store performance along with channel-level comparisons and daily sales trends.
 
 ---
 
@@ -23,7 +25,7 @@ The dashboard tracks the following core KPIs:
 - **Food Panda Revenue**
 - **In-store Food Revenue**
 
-These KPIs automatically update based on the selected date range.
+All KPIs are dynamically calculated and automatically update based on the selected date range.
 
 ---
 
@@ -33,21 +35,34 @@ These KPIs automatically update based on the selected date range.
   Line chart showing net sales performance by day
 
 - **Grab vs Food Panda Daily Revenue**  
-  Side-by-side comparison of third-party delivery platforms
+  Comparative line chart analyzing third-party delivery platform performance
 
 - **Dynamic Date Slicer**  
-  Enables analysis for any completed or in-progress month
+  Enables analysis across any completed or in-progress month
 
 ---
 
 ## 🧹 Data Preparation & Modeling
 
 - Source data originated from **daily sales reports** with inconsistent formatting and excess columns
-- Cleaned and transformed using **Power Query**
+- Data cleaning and transformation performed directly in **Power BI (Transform Data)** using **Power Query**
 - Reduced **200+ raw columns** into a KPI-focused analytical model
+- Standardized date fields and consolidated sales channels
 - Created calculated measures and date logic to support time-based analysis
+
+### Power Query Transformation Preview
+
+![Power Query Cleaned Data](screenshots/power_query_cleaned_data.png)
 
 ---
 
 ## 🗂️ Repository Contents
 
+```text
+powerbi-daily-sales-dashboard/
+├── README.md
+├── screenshots/
+│   ├── dashboard_overview.png
+│   └── power_query_cleaned_data.png
+└── sample_data/
+    └── raw_daily_sales_original.xlsx
